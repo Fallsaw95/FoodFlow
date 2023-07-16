@@ -1,21 +1,6 @@
 # FoodFlow - An Online Food Ordering System
 
 <table border="1">
-<style>
-        table, tr, th {
-            border: 1px #443060 solid;
-            border-collapse: collapse;
-            padding: 5px;
-            text-align: center;
-            background-color: #f2f2f2;
-            color: #99de63;
-        }
-        th {
-            background-color: #64aeaa;
-            color: white;
-        }
-    </style>
-<p><i>*Click on the badge to visit GitHub*</i></p>
 <tr>
 <th><center>Author's Name</center></th>
 <th><center>Author's Profile</center></th>
