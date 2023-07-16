@@ -22,15 +22,15 @@
 </tr>
 <tr>
 <td><center>NIRAJAN DHAKAL</center></td>
-<td><a href="https://github.com/dhakalnirajan" alt="nirajan badge image"><center><img src="./img/badge/nirajan.svg"></center></a></td>
+<td><a href="https://github.com/dhakalnirajan" alt="nirajan badge image"><center><img src="./badge/nirajan.svg"></center></a></td>
 </tr>
 <tr>
 <td><center>SAFAL KUNWAR</center></td>
-<td><a href="https://github.com/fallsaw95" alt="safal badge image"><center><img src="./img/badge/safal.svg"></center></a></td>
+<td><a href="https://github.com/fallsaw95" alt="safal badge image"><center><img src="./badge/safal.svg"></center></a></td>
 </tr>
 <tr>
 <td><center>SANDESH DAHAL</center></td>
-<td><a href="https://github.com/sandesh-10" alt="sandesh badge image"><center><img src="./img/badge/sandesh.svg"></center></a></td>
+<td><a href="https://github.com/sandesh-10" alt="sandesh badge image"><center><img src="./badge/sandesh.svg"></center></a></td>
 </tr>
 </table>
 
@@ -40,9 +40,6 @@ Meta Information:
 
 [![License](https://img.shields.io/badge/License-MIT-blue)](./LICENSE) &nbsp; &nbsp;[![GitHub issues](https://img.shields.io/github/issues/dhakalnirajan/FoodFlow)](https://github.com/dhakalnirajan/FoodFlow/issues) &nbsp; &nbsp;[![GitHub forks](https://img.shields.io/github/forks/dhakalnirajan/FoodFlow)](https://github.com/dhakalnirajan/FoodFlow/network) &nbsp; &nbsp;[![GitHub stars](https://img.shields.io/github/stars/dhakalnirajan/FoodFlow)](https://github.com/dhakalnirajan/FoodFlow/stargazers) &nbsp; &nbsp;
 [![Maintainer](https://img.shields.io/badge/maintainer-dhakalnirajan-blue)](https://github.com/dhakalnirajan)
-
-<br>
-<br>
 
 ## About
 
