@@ -12,23 +12,28 @@ c. Poppins
     font-family: 'Noto Sans JP', sans-serif;
     margin: 10px;
     padding: 3px 3px;
-    background-color: #000000;
+    background-color: #D5F4FF;
 }
 
-.header {
-    color: #efa837;
-    font-size: 23px;
-    font-weight: 400;
+.header-div {
+    margin: 3px 3px 10px 10px;
 }
 
-.content {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
+header {
+    display: inline-block;
 }
 
-.left {
-    float: left;
-    width: 45%;
+.logo {
+    cursor: pointer;
+    margin: 0px 0px 5px 5px;
+    width: 400px;
+    height: auto;
+    padding-top: auto;
+}
+
+select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border-radius: 0px;
+    border: 0px none;
 }
