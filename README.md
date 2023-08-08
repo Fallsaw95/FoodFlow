@@ -15,7 +15,7 @@
 </tr>
 <tr>
 <td><center>SANDESH DAHAL</center></td>
-<td><a href="https://github.com/sandesh-10" alt="sandesh badge image"><center><img src="./badge/sandesh.svg"></center></a></td>
+<td><a href="https://github.com/messageboy10" alt="sandesh badge image"><center><img src="./badge/sandesh.svg"></center></a></td>
 </tr>
 </table>
 
