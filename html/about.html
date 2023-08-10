@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About | FoodFlow</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <style>
+            *{
+                font-family: 'Montserrat', sans-serif;
+                margin: 10px 5px;
+                padding: 5px 5px;
+            }
+
+            body{
+                background-color: rgba(197, 241, 182, 0.335);
+            }
+            .navbar {
+                background-color: chocolate;
+                margin: 0px 0px 5px 5px;
+                padding-top: 0px;
+                padding-bottom: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                position: sticky;
+                scroll-behavior: smooth;
+                border-radius: 20px 20px 2px 2px;
+            }
+
+            h1{
+                font-size: 37px;
+                color: white;
+                letter-spacing: 2px;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: block;
+            }
+
+            .logo{
+                text-decoration: none;
+            }
+
+            .navbar ul li {
+                display: inline-block;
+                position: relative;
+                left: 550px;
+                top: 10px;
+            }
+
+            .navbar ul li a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 5px 20px;
+                margin: 2px 40px;
+                background-color: rgba(53, 62, 78, 0.849);
+                border-radius: 10px;
+                font-size: 16px;
+                letter-spacing: 2px;
+            }
+
+            .navbar ul li a:hover{
+                background-color: rgb(52, 61, 77, 0.54);
+                border-radius: 12px;
+                transition:linear 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275)900ms;
+            }
+
+            .logo {
+                position:fixed;
+                padding-left: 10px;
+                top: 25px;
+            }
+
+            .container{
+                background-color: rgba(230, 230, 226, 0.3);
+                display: flex;
+                flex-direction: column;
+                width: 99%;
+            }
+
+            .content{
+                background-color:rgba(95, 217, 138, 0.946);
+                padding-left: 10px;
+                position: center;
+                margin-left: 18%;
+                color: white;
+                letter-spacing: 2px;
+                display: grid;
+                margin-top: 80px;
+                width: 900px;
+                flex-direction: row;
+                border: 0.2px solid rgb(104, 104, 104);
+                border-radius: 10px 40px 10px 40px;
+            }
+
+            h2{
+                font-size: 37px;
+                color: white;
+                letter-spacing: 2px;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: block;
+            }
+
+            p{
+                color: rgba(245, 241, 255, 0.98);
+                font-size: 18px;
+            }
+
+            marquee{
+                color: black;
+                background-color: rgba(127, 144, 171, 0.873);
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                width: 98%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="./html/home.html" class="logo"><h1>FOODFLOW</h1></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#Login">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <h2>About</h2>
+
+                <!--  -->
+                <p>
+                    FoodFlow is a web-based application built using HTML, CSS,
+                    JavaScript and PHP that allows users to
+                    order food online which allows users to create an
+                    account, add items to their cart,
+                    and checkout. <br><br>
+                    The application also allows users to view their order
+                    history.
+                </p>
+            </div>
+            <div class="marquee">
+                <marquee behavior="slide" direction="Left"
+                    scrollamount:90px;>&nbsp;
+                    Today's
+                    Special!</marquee>
+            </div>
+        </div>
+    </body>
+</html>
