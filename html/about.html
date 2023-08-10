@@ -9,6 +9,8 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             *{
                 font-family: 'Montserrat', sans-serif;
@@ -17,7 +19,7 @@
             }
 
             body{
-                background-color: rgba(197, 241, 182, 0.335);
+                background-color: rgba(201, 235, 189, 0.102);
             }
             .navbar {
                 background-color: chocolate;
@@ -26,8 +28,6 @@
                 padding-bottom: 10px;
                 padding-left: 5px;
                 padding-right: 5px;
-                position: sticky;
-                scroll-behavior: smooth;
                 border-radius: 20px 20px 2px 2px;
             }
 
@@ -77,30 +77,32 @@
             }
 
             .container{
-                background-color: rgba(230, 230, 226, 0.3);
+                background-color: rgba(178, 178, 175, 0.3);
                 display: flex;
                 flex-direction: column;
                 width: 99%;
+                border-radius: 10px;
+                margin: 0px 10px;
             }
 
             .content{
                 background-color:rgba(95, 217, 138, 0.946);
                 padding-left: 10px;
                 position: center;
-                margin-left: 18%;
                 color: white;
                 letter-spacing: 2px;
                 display: grid;
-                margin-top: 80px;
-                width: 900px;
+                margin-top: 20px;
+                margin-left: 20%;
+                width: 980px;
                 flex-direction: row;
-                border: 0.2px solid rgb(104, 104, 104);
-                border-radius: 10px 40px 10px 40px;
+                border: 0.2px dotted rgb(104, 104, 104);
+                border-radius: 10px 10px;
             }
 
             h2{
                 font-size: 37px;
-                color: white;
+                color: black;
                 letter-spacing: 2px;
                 text-align: center;
                 padding-top: 10px;
@@ -109,20 +111,152 @@
             }
 
             p{
-                color: rgba(245, 241, 255, 0.98);
+                color: black;
                 font-size: 18px;
             }
 
-            marquee{
-                color: black;
-                background-color: rgba(127, 144, 171, 0.873);
-                border-radius: 10px;
-                padding: 10px;
-                font-size: 20px;
-                font-weight: bold;
+            .developers{
+                background-color: rgba(180, 243, 207, 0.889);
+                margin-top: 20px;
+                padding-left: 10px;
+                position: center;
+                color: white;
                 letter-spacing: 2px;
-                width: 98%;
+                display: grid;
+                margin-top: 20px;
+                width: 1480px;
+                margin-left: 50px;
+                flex-direction: row;
+                border: 0.2px dotted rgb(104, 104, 104);
+                border-radius: 30px 30px;
             }
+
+            .developers h3{
+                font-size: 28px;
+                color: black;
+                letter-spacing: 2px;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: block;
+            }
+
+            .dev-profile{
+                display: flex;
+                direction: row;
+                padding: 0px 20px;
+            }
+
+            .nirajan ul li{
+                color: blue;
+                display: block;
+                font-weight: 800;
+                letter-spacing: 2px;
+                padding: 3px 50px;
+                margin: 5px 70px;
+                flex-wrap: wrap;
+                font-size: 20px;
+            }
+
+            #li-email{
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.1px;
+            }
+
+            .nirajan ul li:hover{
+                color: rgb(0, 0, 174);
+            }
+
+            .nirajan img{
+                padding: 0px 130px;
+                border-radius: 50px;
+                border: 3px;
+            }
+
+            .safal ul li{
+                color: blue;
+                display: block;
+                font-weight: 800;
+                letter-spacing: 2px;
+                padding: 3px 50px;
+                margin: 5px 70px;
+                flex-wrap: wrap;
+                font-size: 20px;
+            }
+
+            .safal ul li:hover{
+                color: rgb(0, 0, 174);
+            }
+
+            .safal img{
+                padding: 0px 130px;
+                border-radius: 50px;
+                border: 3px;
+            }
+
+            .sandesh ul li{
+                color: blue;
+                display: block;
+                font-weight: 800;
+                letter-spacing: 2px;
+                padding: 3px 50px;
+                margin: 5px 70px;
+                flex-wrap: wrap;
+                font-size: 20px;
+            }
+
+            .sandesh ul li:hover{
+                color: rgb(0, 0, 174);
+            }
+
+            .sandesh img{
+                padding: 0px 130px;
+                border-radius: 2%;
+                border: 3px;
+            }
+
+            .fa {
+                padding: 8px 9px;
+                font-size: 18px;
+                width: 20px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 8px;
+            }
+
+            .fa:hover {
+                opacity: 0.95;
+                color: white;
+                outline: 2px solid #102656;
+            }
+
+            .fa-linkedin {
+                background: #007bb5;
+                color: black;
+            }
+
+            .fa-envelope{
+                background: #007bb5;
+                color: black;
+            }
+
+            .fa-github{
+                background: #007bb5;
+                color: white;
+                margin-left: -2px;
+            }
+
+            .fa-github:hover{
+                background-color: #000000;
+            }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+            }
+
         </style>
     </head>
     <body>
@@ -140,23 +274,80 @@
         <div class="container">
             <div class="content">
                 <h2>About</h2>
-
-                <!--  -->
+                <!-- Description of FoodFlow -->
                 <p>
                     FoodFlow is a web-based application built using HTML, CSS,
                     JavaScript and PHP that allows users to
                     order food online which allows users to create an
                     account, add items to their cart,
-                    and checkout. <br><br>
-                    The application also allows users to view their order
-                    history.
+                    and checkout.The application also allows users to view their
+                    order history.
                 </p>
             </div>
-            <div class="marquee">
-                <marquee behavior="slide" direction="Left"
-                    scrollamount:90px;>&nbsp;
-                    Today's
-                    Special!</marquee>
+
+            <!-- Developer Profile -->
+            <div class="developers">
+
+                <h3>Developers</h3>
+                <div class="dev-profile">
+                    <!-- Nirajan Profile -->
+
+                    <div class="nirajan">
+                        <img src="../img/nirajan.jpg" alt="Nirajan Dhakal"
+                            height="150px" width="150px">
+                        <ul>
+                            <li>Nirajan Dhakal</li>
+                            <li><a
+                                    href="https://linkedin.com/in/nirajandhakal07/"
+                                    class="fa fa-linkedin"></a>
+                                <a
+                                    href="mailto:nirajandhakal71@gmail.com"><i
+                                        class="fa fa-envelope"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://github.com/dhakalnirajan/"><i
+                                        class="fa fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Safal Profile -->
+                    <div class="safal">
+                        <img src="../img/safal.jpg" alt="Safal Kunwar"
+                            height="150px" width="150px">
+                        <ul>
+                            <li>Safal Kunwar</li>
+                            <li><a
+                                    href="https://www.facebook.com/profile.php?id=100034215280984"
+                                    class="fa fa-facebook"></a>
+                                <a href="mailto:fallsaw95@gmail.com"><i
+                                        class="fa fa-envelope"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://github.com/fallsaw95/"><i
+                                        class="fa fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Sandesh Profile -->
+
+                    <div class="nirajan">
+                        <img src="../img/sandesh.jpg" alt="Sandesh Dahal"
+                            height="150px" width="150px">
+                        <ul>
+                            <li>Sandesh Dahal</li>
+                            <li><a
+                                    href="https://linkedin.com/in/messageboy10/"
+                                    class="fa fa-linkedin"></a>
+                                <a
+                                    href="mailto:sandeshdahal986@gmail.com"><i
+                                        class="fa fa-envelope"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://github.com/messageboy10/"><i
+                                        class="fa fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
