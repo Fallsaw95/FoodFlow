@@ -4,115 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FoodFlow | Signup</title>
-
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-            * {
-                font-family: 'Noto Sans JP', sans-serif;
-                margin: 0px;
-                }
-                body {
-                height: 100vh;
-                background-color: #d5f4ff;
-                }
-                header {
-                width: 100%;
-                height: 80px;
-                display: flex;
-                }
-                nav {
-                width: 100%;
-                height: 80px;
-                display:grid;
-                }
-
-            .navbar-background {
-                width: 100%;
-                height: 80px;
-                background-color: #eeee79;
-                display: flex;
-                }
-
-            .navbar-background a {
-                font-family: 'Poppins', sans-serif;
-                font-size: 30px;
-                color: #38215d;
-                text-decoration:wavy;
-                padding: 30px 100px;
-                font-weight: 700;
-                }
-
-            .navbar-background a:hover{
-                background-color: #d5f4ff;
-                color: black;
-                border-radius: 3px;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            }
-
-            /* This Login Button needs to be aligned from the right.*/
-            .login{
-                left: 1200px;
-                right: 100px;
-                width: 100px;
-                height: 20px;
-                color: white;
-                cursor: pointer;
-                position: absolute;
-            }
-
-            .background{
-                margin: 10x 20px 0px 0px;
-                padding-top: 3px;
-            }
-
-            h1 {
-                margin-top: 20px;
-                text-align: center;
-                transform: translateY(-10px, 20px);
-                transition: 0.9s;
-            }
-
-            form {
-                display: flex;
-                flex-direction: column;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            label {
-                margin-bottom: 5px;
-                padding-bottom: 3px;
-            }
-            input {
-                padding: 10px;
-                margin-bottom: 10px;
-                border-radius: 50px;
-                border: 1px solid #ccc;
-            }
-            input:focus {
-                padding-top: 10px;
-                padding-left: 20px;
-                border: 1px solid #4CAF50;
-                outline: 1px solid #2bd3df;
-                transition: 0.3s;
-                box-shadow: 4px 4px 3px rgb(56, 78, 91);
-            }
-
-            button {
-                padding: 10px;
-                background-color: #4CAF50;
-                color: white;
-                border: 1px double #2e397c;
-                border-radius: 20px;
-                cursor: pointer;
-            }
-
-            button:hover {
-                background-color: #45a049;
-            }
-        </style>
+        <link rel="stylesheet" href="../css/signup.css">
     </head>
     <body>
         <header>
@@ -126,21 +18,27 @@
         <div class="background">
             <h1>Sign Up</h1>
             <form action="signup.php" method="POST">
+
                 <label for="first_name">First Name</label>
                 <input type="text" id="fname" name="fname" required
                     placeholder="Enter Your First Name"><br>
+
                 <label for="last_name">Last Name</label>
                 <input type="text" id="lname" name="lname" required
                     placeholder="Enter Your Last Name"><br>
+
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required
                     placeholder="johndoe@example.com"><br>
+
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password"
                     required placeholder="Enter your password here"><br>
+
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required
                     placeholder="9800000000"><br>
+
                 <button type="submit">Sign Up</button>
             </form>
         </div>
