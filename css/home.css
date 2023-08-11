@@ -15,6 +15,7 @@
     float: left;
     list-style: none;
     margin: 13px 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar li a {
@@ -50,6 +51,7 @@
     display: inline-flex;
     flex-direction: column;
     width: 100%;
+    margin: 10px 10px;
 }
 
 .carousel-inner {
@@ -63,6 +65,7 @@
     background-color: rgb(209, 209, 209);
     border: 1px solid gray;
     border-radius: 10px;
+    margin: 20px 5px;
 }
 
 .carousel-item img {
@@ -101,4 +104,30 @@ img {
 .add-to-cart {
     padding: 10px 20px;
     margin: 10px 10px;
+}
+
+.cart-feedback {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #3f3631;
+    text-align: center;
+    margin: 5px 0px;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+footer p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }

@@ -14,7 +14,7 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="./about.html">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact us</a></li>
                     <div class="search">
@@ -112,6 +112,35 @@
                 <button class="add-to-cart">Add to Cart</button>
             </div>
         </div>
+        <div class="footer">
+            <footer>
+                <p>&copy; 2023 FoodFlow. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <script>
+            const addToCartButtons = document.querySelectorAll(".add-to-cart");
+        
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    // Implement your logic here for adding items to the cart
+                    const itemTitle = button.parentElement.querySelector("h3").innerText;
+                    showCartFeedback(itemTitle);
+                });
+            });
+        
+            function showCartFeedback(itemTitle) {
+                const cartFeedback = document.createElement("div");
+                cartFeedback.className = "cart-feedback";
+                cartFeedback.textContent = `${itemTitle} added to cart!`;
+        
+                document.body.appendChild(cartFeedback);
+        
+                setTimeout(() => {
+                    cartFeedback.remove();
+                }, 2000);
+            }
+        </script>
     </body>
 
 </html>
