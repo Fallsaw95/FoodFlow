@@ -29,114 +29,39 @@
                 </ul>
             </nav>
         </header>
-
-
-        <div class="content">
-            <div class="carousel">
-                <div class="coffee-item">
-                    <img src="../img/espresso.jpg" alt="Espresso" height="200px"
-                        width="200px">
-                    <h3>Espresso</h3>
-                   
-                    <button class="add-to-cart">Add to Cart</button>
+    </body>
+    <!-- this is for adding cart -->
+    <body class="">
+    
+        <div class="container">
+            <header>
+                <h1>Your Shopping Cart</h1>
+                <div class="shopping">
+                    <img src="image/shopping.svg">
+                    <span class="quantity">0</span>
                 </div>
-                <div class="coffee-item">
-                    <img src="../img/cappuccino.jpg" alt="Cappuccino"
-                        height="200px"
-                        width="200px">
-                    <h3>Cappuccino</h3>
-                  
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="coffee-item">
-                    <img src="../img/latte.jpg" alt="Latte" height="200px"
-                        width="200px">
-                    <h3>Latte</h3>
-                  >
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="coffee-item">
-                    <img src="../img/Mocha.jpg  " alt="Mocha" height="200px"
-                        width="200px">
-                    <h3>Mocha</h3>
-                   
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-            <div class="coffee-item">
-                <img src="../img/macchiato.jpg" alt="Macchiato" height="200px"
-                    width="200px">
-                <h3>Macchiato</h3>
-                
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="coffee-item">
-                <img src="../img/Americano.jpg" alt="Americano" height="200px"
-                    width="200px">
-                <h3>Americano</h3>
-               
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="coffee-item">
-                <img src="../img/flat-white.jpg" alt="Flat White" height="200px"
-                    width="200px">
-                <h3>Flat White</h3>
-               
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="coffee-item">
-                <img src="../img/iced-coffee.jpg" alt="Iced Coffee"
-                    height="200px"
-                    width="200px">
-                <h3>Iced Coffee</h3>
-                
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="coffee-item">
-                <img src="../img/cold-brew.jpg" alt="Cold Brew" height="200px"
-                    width="200px">
-                <h3>Cold Brew</h3>
-               
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="coffee-item">
-                <img src="../img/turkish coffee.jpg" alt="Turkish Coffee"
-                    height="200px"
-                    width="200px">
-                <h3>Turkish Coffee</h3>
-               
-                <button class="add-to-cart">Add to Cart</button>
+            </header>
+    <div class="backgroundimg"></div>
+            <div class="list">
+              
             </div>
         </div>
+        <div class="card">
+            <h1>Card</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+    
+        <script src="app.js"></script>
+        
         <div class="footer">
             <footer>
                 <p>&copy; 2023 FoodFlow. All rights reserved.</p>
             </footer>
         </div>
-
-        <script>
-            const addToCartButtons = document.querySelectorAll(".add-to-cart");
-        
-            addToCartButtons.forEach(button => {
-                button.addEventListener("click", () => {
-                    // Implement your logic here for adding items to the cart
-                    const itemTitle = button.parentElement.querySelector("h3").innerText;
-                    showCartFeedback(itemTitle);
-                });
-            });
-        
-            function showCartFeedback(itemTitle) {
-                const cartFeedback = document.createElement("div");
-                cartFeedback.className = "cart-feedback";
-                cartFeedback.textContent = `${itemTitle} added to cart!`;
-        
-                document.body.appendChild(cartFeedback);
-        
-                setTimeout(() => {
-                    cartFeedback.remove();
-                }, 2000);
-            }
-        </script>
-    </body>
-
+    </body>    
 </html>
