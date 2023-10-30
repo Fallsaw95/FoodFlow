@@ -195,6 +195,8 @@ header .shopping span{
     font-weight: bold;
     cursor: pointer;
 }
+ 
+
 .card .checkOut div:nth-child(2){
     background-color: #1C1F25;
     color:#d4d7c3;
@@ -220,3 +222,18 @@ header .shopping span{
 .listCard .count{
     margin: 0 10px;
 }
+
+/*for payment button*/
+#payButton {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  #payButton:hover {
+      background-color: #363636;
+  }

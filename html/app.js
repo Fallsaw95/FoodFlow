@@ -5,6 +5,8 @@ let listCard = document.querySelector('.listCard');
 let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
+let isLoggedIn = document.querySelector('.login-page');
+
 
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
@@ -106,3 +108,28 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+//for payment button 
+document.getElementById("payButton").addEventListener("click", function() {
+    // Perform the payment process here
+ 
+ function checkLogin() {
+    // Check if the user is logged in
+    if (!isLoggedIn()) {
+      // Redirect to the login page
+      window.location.href = "./html/login.html";
+    } else {
+      // Proceed to the payment page
+      window.location.href = "/payment";
+    }
+  }
+  
+  function isLoggedIn() {
+    // Check if the user is logged in
+    // Return true if the user is logged in, false otherwise
+    // You can use cookies or local storage to store the login status
+    // Here is an example using cookies:
+    return document.cookie.indexOf("loggedIn=true") !== -1;
+  }
+   
+  alert("Payment initiated!");
+});
