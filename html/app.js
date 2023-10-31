@@ -5,6 +5,8 @@ let listCard = document.querySelector('.listCard');
 let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
+let isLoggedIn = document.querySelector('.form');
+
 
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
@@ -106,3 +108,22 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+//for payment button 
+
+// Add an event listener to the payment button
+document.getElementById('payButton').addEventListener('click', function() {
+    // Check if the user is logged in
+    if (sessionStorage.getItem('loggedIn') || document.cookie.indexOf('loggedIn=true') !== -1) {
+      // User is logged in, process payment
+      processPayment();
+    } else {
+        alert("Please login Frist")
+      // User is not logged in, redirect to login page
+      window.location.href = './login.html';
+    }
+  });
+  
+  // Function to process payment
+  function processPayment() {
+    // Code to process payment goes here
+  }
