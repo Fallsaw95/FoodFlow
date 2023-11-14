@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 body{
     background-image: url(../img/cafebackground.jpg);
+    background-size: cover;
     font-family: 'Montserrat', sans-serif !important;
     
 }
@@ -36,7 +37,8 @@ body{
 .search {
     float: right;
     color: white;
-    padding: 12px 75px;
+    padding: 2px 104px;
+    
 }
 
 .navbar input {
@@ -76,6 +78,35 @@ footer p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
+}
+.navbar .container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+nA{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+.navbar.shopping{
+    position: relative;
+    text-align: right;
+}
+.navbar .shopping img{
+    width: 45px;
+}
+.navbar .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 90%;
+    padding: 3px 10px;
 }
 
 /* this is for cart */
