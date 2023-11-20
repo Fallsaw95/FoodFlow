@@ -41,10 +41,10 @@ input:focus {
     background-color: #c6e4c789;
     transition: 0.4s;
     border: 0.5px solid #4CAF50;
+    box-shadow: 4px 4px 3px rgb(56, 78, 91);
 }
 
 input:hover {
-    box-shadow: 4px 4px 3px rgb(56, 78, 91);
     transition: 0.4s;
     outline: 2px;
     border: 0.5px solid #4CAF50;
