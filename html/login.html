@@ -9,22 +9,41 @@
         <link rel="stylesheet" href="../css/login.css">
     </head>
     <body>
-        <div class="login-page">
-            <div class="form">
-                <form class="login-form" action="login.php" method="post">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" placeholder="username" />
-                    <label for="password">Password</label>
-                    <input type="password" name="password"
-                        placeholder="password" />
-                    <button type="submit">login</button>
-                    <p class="message">Not registered?
-                        <button type="submit" id="create-acc"><a
-                                href="register.php" style="color: white;">Create
-                                an account</a></button></p>
-                </form>
-            </div>
-        </div>
-        <script src="app.js"></script>
-    </body>
-</html>
+        <body>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="./signup.html">Login/Signup</a>
+                        <div class="search">
+                            <input type="text" name="search" id="search"
+                                placeholder="Search this website">
+                        </div>
+                    </ul>
+                </nav>
+                <div class="login-page">
+
+                    <div class="form">
+                        <form class="login-form" action="login.php"
+                            method="post">
+                            <label for="username">Username</label>
+                            <input type="text" name="username"
+                                placeholder="username" />
+                            <label for="password">Password</label>
+                            <input type="password" name="password"
+                                placeholder="password" />
+                            <button type="submit" id="loginButton">login</button>
+                            <p class="message">Not registered?
+                                <button type="submit" id="create-acc"><a
+                                        href="register.php"
+                                        style="color: white;">Create
+                                        an
+                                        account</a></button></p>
+                        </form>
+                    </div>
+                </div>
+                <script src="app.js"></script>
+            </body>
+        </html>

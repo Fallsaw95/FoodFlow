@@ -440,7 +440,7 @@ document.getElementById ('payButton').addEventListener ('click', function () {
     // User is logged in, process payment
     processPayment ();
   } else {
-    alert ('Please login First');
+    alert ('Please login Frist');
     // User is not logged in, redirect to login page
     window.location.href = './login.html';
   }
@@ -448,16 +448,5 @@ document.getElementById ('payButton').addEventListener ('click', function () {
 
 // Function to process payment
 function processPayment () {
-  // Check if the "Cash on Delivery" option is selected
-  if (document.getElementById ('cashOnDelivery').checked) {
-    // Send the order to the database
-    sendOrderToDatabase ();
-
-    // Alert the user
-    alert ('Your order has been sent!');
-  }
-}
-
-function sendOrderToDatabase () {
-  // Code to send the order to the database goes here
+  // Code to process payment goes here
 }

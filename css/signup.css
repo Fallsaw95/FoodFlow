@@ -4,51 +4,76 @@
 
 * {
     font-family: 'Noto Sans JP', sans-serif;
-    margin: 0px;
+   
 }
 
 body {
     height: 100vh;
-    background-color: #d5f4ff;
+    background-image: url(../img/cafebackground.jpg);
+    background-size: cover;
 }
 
-header {
-    width: 100%;
-    height: 80px;
-    display: flex;
+.navbar {
+    background-color: black;
+    border-radius: 30px;
+  
 }
 
-nav {
-    width: 100%;
-    height: 80px;
-    display: grid;
+.navbar ul {
+    overflow: auto;
 }
 
-.navbar-background {
-    width: 100%;
-    height: 80px;
-    background-color: #eeee79;
-    display: flex;
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-background a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    color: #38215d;
-    text-decoration: wavy;
-    padding: 30px 100px;
-    font-weight: 700;
+.navbar li a {
+
+    padding: 3px 3px;
+    text-decoration: none;
+    color: #d4d7c3;
 }
 
-.navbar-background a:hover {
-    background-color: #d5f4ff;
+.navbar li a:hover {
+    color: red
+}
+
+.search {
+    float: right;
+    color: white;
+    padding: 2px 104px;
+    
+}
+
+.navbar input {
+    border: 1px solid black;
+    border-radius: 14px;
+    padding: 1px 17px;
+    width: 129px;
+}
+
+.content {
     color: black;
-    border-radius: 3px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    font-family: 'Montserrat', sans-serif;
+
 }
 
+.carousel {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 10px;
+}
+
+.carousel-inner {
+    width: 100%;
+    overflow: hidden;
+}
 /* This Login Button needs to be aligned from the right.*/
-.login {
+/*.login {
     left: 1200px;
     right: 100px;
     width: 100px;
@@ -56,22 +81,34 @@ nav {
     color: white;
     cursor: pointer;
     position: absolute;
-}
+}*/
 
-.background {
-    margin: 10x 20px 0px 0px;
+.signup-background {
+ 
+    align-items: center;
+    width: 500px;
     padding-top: 3px;
+    color: fff;
+    background: transparent;
+    border: 1px solid rgb(43, 43, 41);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, rgba(0, 0, 0, 0.23));
+    margin: auto;
+    border-radius: 12px;
 }
 
 h1 {
-    margin-top: 20px;
-    text-align: center;
+text-align: center;
+    padding-left: 45px;
+    padding-bottom: 10px;
     transform: translateY(-10px, 20px);
-    transition: 0.9s;
-    margin-bottom: 50px;
+    transition: 0.8s;
+  
 }
 
 form {
+    width: 420px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     padding-left: 20px;
@@ -89,7 +126,7 @@ input {
     margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid #cccccc;
-    width: 800px;
+   
     margin-left: 30px;
 }
 
@@ -98,8 +135,15 @@ input:focus {
     padding-left: 20px;
     border: 1px solid #4CAF50;
     outline: 1px solid #2bd3df;
-    transition: 0.3s;
+    transition: 0.4s;
     box-shadow: 4px 4px 3px rgb(56, 78, 91);
+}
+
+input:hover {
+    box-shadow: 4px 4px 3px rgb(56, 78, 91);
+    transition: 0.4s;
+    outline: 2px;
+    border: 0.5px solid #4CAF50;
 }
 
 button {
@@ -111,9 +155,12 @@ button {
     cursor: pointer;
     font-size: 18px;
     width: 150px;
-    margin: -5px 30px;
+    margin: -5px 10px;
 }
 
 button:hover {
     background-color: #45a049;
+}
+.message{
+    display: inline-block;
 }
