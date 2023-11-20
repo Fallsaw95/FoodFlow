@@ -39,8 +39,8 @@ body {
 .search {
     float: right;
     color: white;
-    padding: 2px 104px;
-    
+    padding: 2px 300px;
+
 }
 
 .navbar input {
@@ -82,24 +82,29 @@ footer p {
     font-weight: 400;
     font-size: 14px;
 }
-.navbar .container{
+
+.navbar .container {
     width: 1000px;
     margin: auto;
     transition: 0.5s;
 }
-nA{
+
+nA {
     display: grid;
     grid-template-columns: 1fr 50px;
     margin-top: 50px;
 }
-.navbar.shopping{
+
+.navbar.shopping {
     position: relative;
     text-align: right;
 }
-.navbar .shopping img{
+
+.navbar .shopping img {
     width: 45px;
 }
-.navbar .shopping span{
+
+.navbar .shopping span {
     background: red;
     border-radius: 50%;
     display: flex;

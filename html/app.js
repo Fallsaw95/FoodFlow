@@ -450,3 +450,18 @@ document.getElementById ('payButton').addEventListener ('click', function () {
 function processPayment () {
   // Code to process payment goes here
 }
+
+const searchFun = () => {
+  let filter = document.getElementById ('onSearch').value.toUpperCase ();
+  let products = document.getElementsByClassName ('item');
+  for (let i = 0; i < products.length; i++) {
+    let productName = products[i]
+      .getElementsByClassName ('title')[0]
+      .textContent.toUpperCase ();
+    if (productName.includes (filter)) {
+      products[i].style.display = 'block';
+    } else {
+      products[i].style.display = 'none';
+    }
+  }
+};
